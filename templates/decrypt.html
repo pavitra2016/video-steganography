@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Steganography - Decryption</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:#ffffff;
+    width:380px;
+    padding:35px 30px;
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    text-align:left;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#c33764;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d2671;
+}
+
+.link{
+    margin-top:15px;
+}
+
+.link a{
+    color:#c33764;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>🔓 Video Steganography – Decryption</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <label>Upload Encrypted Video</label>
+        <input type="file" name="video" required>
+
+        <label>Enter Decryption Key</label>
+        <input type="text" name="key" placeholder="Same key used for encryption" required>
+
+        <button type="submit">Decrypt Message</button>
+
+    </form>
+
+    <div class="link">
+        <a href="/">← Back to Encryption</a>
+    </div>
+</div>
+
+</body>
+</html>

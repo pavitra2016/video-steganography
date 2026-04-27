@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Decrypted Message</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Card */
+.container{
+    background:#ffffff;
+    width:400px;
+    padding:35px 30px;
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+/* Heading */
+.container h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Result box */
+.result{
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:6px;
+    font-size:16px;
+    color:#222;
+    margin-bottom:20px;
+    word-wrap:break-word;
+}
+
+/* Link */
+.link a{
+    text-decoration:none;
+    color:#c33764;
+    font-weight:600;
+}
+
+.link a:hover{
+    text-decoration:underline;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>✅ Decrypted Message</h2>
+
+    <div class="result">
+        {{ decrypted_message }}
+    </div>
+
+    <div class="link">
+        <a href="/">Encrypt Another Message</a>
+    </div>
+
+</div>
+
+</body>
+</html>
